@@ -45,7 +45,7 @@ const Controls = () => {
   };
 
   return (
-    <div>
+    <div className="controls">
       <ControlsSelect
         options={filteredItems}
         option={filteredItem}
@@ -58,7 +58,6 @@ const Controls = () => {
         valueForFiltering={valueForFiltering}
         filterInputChange={filterInputChange}
         moveFilter={moveFilter} />
-      <button onClick={() => moveFilter()}>Поиск</button>
     </div>
   );
 };

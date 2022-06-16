@@ -1,0 +1,12 @@
+.pagination {
+  display: flex;
+
+&__button {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid grey;
+  &:hover {
+    background-color: rgb(230, 217, 217)
+  }
+}
+}

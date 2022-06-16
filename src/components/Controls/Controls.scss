@@ -1,3 +1,11 @@
+.controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+
 select.selectmenu-element,
 .selectmenu-element::part(button) {
 	color: white;
@@ -53,4 +61,8 @@ select.selectmenu-element {
 		background: #333;
 		color: white;
 	}
+}
+
+.controlsInput {
+  display: flex;
 }

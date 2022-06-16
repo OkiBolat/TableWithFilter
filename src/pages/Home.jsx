@@ -13,7 +13,6 @@ const Home = () => {
   const options = useSelector((state) => state.reducer.filteredParams)
   const pages = useSelector((state) => setPages(state))
 
-
   const itemsWithMemo = useMemo(() => {
     if (options.name && options.option) {
       switch (options.option) {
