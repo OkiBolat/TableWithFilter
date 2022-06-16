@@ -1,15 +1,16 @@
 import React from "react";
 import TableItem from "../TableItem/TableItem";
+import './Table.scss'
 
 const Table = ({items}) => {
   return (
     <table className="table" color="red">
     <thead>
       <tr>
-        <td>Дата</td>
-        <td>Название</td>
-        <td>Количество</td>
-        <td>Расстояние</td>
+        <th>Дата</th>
+        <th>Название</th>
+        <th>Количество</th>
+        <th>Расстояние</th>
       </tr>
     </thead>
     <tbody>

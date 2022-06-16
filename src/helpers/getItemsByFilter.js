@@ -26,10 +26,8 @@ export const getItemsByFilter = {
     switch (dateType) {
       case 'name':
         return items.filter(item => item[dateType].includes(valueForFiltered))
-      case 'amount':
-        return items.filter(item => item[dateType].split('').includes(valueForFiltered))
-      case 'distance':
-        return items.filter(item => item[dateType] > valueForFiltered)
+      case 'amount' || 'distance':
+        return items.filter(item => Number(item[dateType]) ===  Number(valueForFiltered))
       default:
         return items;
     }

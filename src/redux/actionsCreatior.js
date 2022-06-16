@@ -11,10 +11,11 @@ export const addFilteredOptions = (payload) => ({
   payload
 });
 
-export const getItemThunk = (page) => {
+export const getItemsThunk = (page) => {
   return (dispatch) => {
-    itemsServices.getItems(page).then(({data}) => {
-      dispatch(getItems(data))
+    itemsServices.getItems(page).then((res) => {
+      console.log(res)
+      dispatch(getItems(res.data))
     })
   }
 }

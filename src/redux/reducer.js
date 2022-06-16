@@ -3,6 +3,8 @@ import { GET_ITEMS, ADD_FILTERED_OPTIONS } from "./actions";
 const initialState = {
   items: [],
   filteredItems: [],
+  totalCount: 100,
+  pageSize: 20,
   filteredParams: {
     name: '',
     option: '',
@@ -15,8 +17,8 @@ const reducer = (state = initialState, action) => {
     case GET_ITEMS:
       return {
         ...state,
-        items: [...state.items, ...action.payload],
-        filteredItems: [...state.filteredItems, ...action.payload]
+        items: [...action.payload],
+        filteredItems: [...action.payload]
       }
     case ADD_FILTERED_OPTIONS:
       const payload = action.payload
@@ -33,6 +35,6 @@ const reducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 export default reducer;
