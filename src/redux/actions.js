@@ -1,0 +1,2 @@
+export const GET_ITEMS = 'GET_ITEMS';
+export const ADD_FILTERED_OPTIONS = 'ADD_FILTERED_OPTIONS';
